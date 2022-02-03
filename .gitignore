@@ -1,22 +1,22 @@
 # compiled output
-/Task-Management/dist
-/Task-Management/node_modules
+/dist
+/node_modules
 
 # Logs
-/Task-Managementlogs
-/Task-Management*.log
-/Task-Managementnpm-debug.log*
-/Task-Managementpnpm-debug.log*
-/Task-Managementyarn-debug.log*
-/Task-Managementyarn-error.log*
-/Task-Managementlerna-debug.log*
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # OS
-/Task-Management/.DS_Store
+.DS_Store
 
 # Tests
-/Task-Management/coverage
-/Task-Management/.nyc_output
+coverage
+.nyc_output
 
 # IDEs and editors
 /.idea
