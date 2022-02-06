@@ -1,3 +1,8 @@
+## Supporting GitHub
+
+[nestjs-course-task-management](https://github.com/arielweinberger/nestjs-course-task-management)
+[task-management-frontend](https://github.com/arielweinberger/task-management-frontend)
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
