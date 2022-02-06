@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TasksModule } from './tasks/tasks.module';
+import { AuthModule } from './auth/auth.module';
 
 // https://github.com/arielweinberger/nestjs-course-task-management/
 @Module({
@@ -16,6 +17,7 @@ import { TasksModule } from './tasks/tasks.module';
       autoLoadEntities: true,
       synchronize: true,
     }),
+    AuthModule,
   ],
 })
 export class AppModule {}
