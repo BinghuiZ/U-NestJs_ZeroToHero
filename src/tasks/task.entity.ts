@@ -17,6 +17,8 @@ export class Task {
   @Column()
   status: TaskStatus;
 
+  // tasks belong to a user
+  // eager: false => will no query user when the task is loaded
   @ManyToOne((_type) => User, (user) => user.task, { eager: false })
   @Exclude({ toPlainOnly: true })
   user: User;
