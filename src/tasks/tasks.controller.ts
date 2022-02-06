@@ -15,9 +15,9 @@ import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTaskFilterDto } from './dto/get-task.dto';
 import { UpdateTaskStatusDto } from './dto/update-tsak-status.dto';
 import { Task } from './task.entity';
-import { GetUser } from 'src/auth/get-user.decorator';
+import { GetUser } from '../auth/get-user.decorator';
 import { AuthGuard } from '@nestjs/passport';
-import { User } from 'src/auth/user.entity';
+import { User } from '../auth/user.entity';
 import { Logger } from '@nestjs/common';
 
 @Controller('tasks')
@@ -36,7 +36,7 @@ export class TasksController {
         filterDto,
       )}`,
     );
-    return this.tasksService.getTask(filterDto, user);
+    return this.tasksService.getTasks(filterDto, user);
   }
 
   @Get('/:id')
